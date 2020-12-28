@@ -4,6 +4,7 @@ In our study, the longitudinal data related to anxiety symptom scores were used 
 In our repository, we uploaded the code we have used in the adult sample. The code which we used in the adolescent sample is similar.
 
 Note.
+
 NEO-FFIN
 The NEO‐FFIN Personality Inventory (NEO-FFIN) (Costa & McCrae 1992) is a questionnaire that works as a personality survey and aims to evaluate five personality features in the five-factor personality model.
 
