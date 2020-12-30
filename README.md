@@ -1,7 +1,7 @@
 # Neuroticism-factors-and-anxiety-symptoms
 In our study, the longitudinal data related to anxiety symptom scores were used to evaluate the predictive effects of the neuroticism factors on anxiety symptoms, the reciprocal effects of stress and neuroticism factors on anxiety symptoms, and whether neuroticism factors have a regulatory effect on the relationship between stress and anxiety symptoms or not. Specific calculations were completed by the SAS (version 9.0) (SAS Institute 2015) mixed model program and the maximum likelihood estimation method. The independent variables (predictors) are the scores for different neuroticism factors and stress scores (ALEQ/SHS) of the subjects, as well as the scores for the interaction between different neuroticism factors and stress. The dependent variables are the anxiety scores of the subjects in MASC/MASQ.
 
-In our repository, we uploaded the code we have used in the adult sample. The code which we used in the adolescent sample is similar.
+In our repository, we uploaded the code we have used in the adult sample. The code which we used in the adolescent sample is similar.We also updated the baseline data,however,we did not upload the longitudinal data because the confidentiality.
 
 Note.
 
