@@ -1,0 +1,57 @@
+TITLE: Bifactor Model in Neuroticism
+DATA:  FILE IS adolescent_mplus.csv;
+VARIABLE:   NAMES ARE
+Subject 
+neo_01
+neo_06
+neo_11 
+neo_16
+neo_21 
+neo_26 
+neo_31  
+neo_36
+neo_41
+neo_46
+neo_51
+neo_56
+neo_tot; 
+               USEVARIABLES are 
+neo_01 
+neo_06 
+neo_11  
+neo_16 
+neo_21  
+neo_26  
+neo_31   
+neo_36 
+neo_41 
+neo_46 
+neo_51 
+neo_56;
+
+MISSING ARE ALL (-999);
+ANALYSIS:  ESTIMATOR=ML;
+   MODEL:      F1 BY neo_01* neo_11 neo_16 neo_31 neo_46;
+               F2 by neo_06* neo_21 neo_26  neo_36 neo_41 neo_51 neo_56;
+               
+               G by neo_01*  
+neo_06 
+neo_16
+neo_11 
+neo_21 
+neo_26 
+neo_31 
+neo_36 
+neo_41 
+neo_46 
+neo_51 
+neo_56;
+               
+               F1 with F2@0; 
+               G with F1-F2@0; 
+               F1-F2@1;
+               G@1;
+ OUTPUT:   STANDARDIZED STDYX MODINDICES samp;
+  savedata:
+file is neurG.csv;
+save = fscores;
